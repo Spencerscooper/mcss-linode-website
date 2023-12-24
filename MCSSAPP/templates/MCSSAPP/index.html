@@ -1,0 +1,232 @@
+{% extends 'MCSSAPP/nav_footer.html' %}
+{%load static%}
+{% block title %}Home{% endblock %}
+
+
+{%block mcss-home-page%}
+
+ <!-- ======= Cta Section ======= -->
+ {%if mcss_update %}
+ <section id="cta" class="cta">
+   <div class="container" data-aos="zoom-in">
+     <div class="text-center">
+       <h3>{{mcss_update.date_publish}}</h3>
+       <strong>{{mcss_update.date_publish}}</strong>
+       <p>{{mcss_update.body}}</p>
+       <a class="cta-btn" href="#">Read more</a>
+     </div>
+   </div>
+ </section><!-- End Cta Section -->
+ {%else %}
+
+ {% endif %}
+ 
+
+<!-- ======= Portfolio / School galleries Section ======= -->
+<section id="portfolio" class="portfolio">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>WELCOME to</h2>
+      <h3>Monrovia Consolidated School System</h3>
+    </div>
+  <div class="row" data-aos="fade-up" data-aos-delay="150">
+      <div class="col-lg-12 d-flex justify-content-center">
+        <ul id="portfolio-flters">
+          <li data-filter="*" class="filter-active">MCSS Schools</li>
+          <li data-filter=".filter-app">Elementary</li>
+          <li data-filter=".filter-card">Senior High</li>
+          <li data-filter=".filter-web">Junior</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="portfolio-wrap">
+          <img src="{% static 'assets/img/Schools/Abedu-Bentsi.jpg'%}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Abedi Bentsi</h4>
+            <p>Logan Town</p>
+            <div class="portfolio-links">
+            <a href="" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-wrap">
+          <img src="{%static 'assets/img/Schools/A-Glenn-Tubman.jpg'%}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>A Glenn Tubman</h4>
+            <p>12<sup>th</sup>Street, Sinkor</p>
+            <div class="portfolio-links">
+            <a href="" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+        <div class="portfolio-wrap">
+          <img src="{%static 'assets/img/Schools/A-Glenn-Tubman.jpg'%}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>A Glenn Tubman Senior </h4>
+            <p>12<sup>th</sup>Street, Sinkor</p>
+            <div class="portfolio-links">
+            <a href="" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+  </div>
+</section><!--End Portfolio Section -->
+
+<!-- ======= Pricing Section ======= -->
+<section id="pricing" class="pricing">
+ <div class="container" data-aos="fade-up">
+
+   <div class="section-title">
+     <h2>PTA Fees</h2>
+   </div>
+
+   <div class="row">
+
+     <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="100">
+         <div class="box featured">
+           <h3>ECD</h3>
+           <h4><sup>$</sup>3,350<span> / LD</span></h4>
+           <ul>
+             <br>
+             <br>
+           </ul>
+           <div class="btn-wrap">
+             <class="btn-buy">Tuition Free</a>
+           </div>
+         </div>
+       </div>
+
+ </div>
+</section><!-- End Pricing Section -->
+
+
+
+<!-- ======= Counts Section ======= -->
+<section id="counts" class="counts section-bg">
+ <div class="container">
+    
+   <div class="row justify-content-end">
+     <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+       <div class="count-box">
+         <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="2" class="purecounter"></span>
+         <p>Twenty Five Schools</p>
+       </div>
+     </div>
+
+     <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+       <div class="count-box">
+         <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="2" class="purecounter"></span>
+         <p>Students for Academic 2023/2025</p>
+       </div>
+     </div>
+
+     <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+       <div class="count-box">
+         <span data-purecounter-start="0" data-purecounter-end="55" data-purecounter-duration="2" class="purecounter"></span>
+         <p>Fifty Five Years of National Service</p>
+       </div>
+     </div>
+
+     <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+       <div class="count-box">
+         <span data-purecounter-start="0" data-purecounter-end="45000" data-purecounter-duration="2" class="purecounter"></span>
+         <p>Over Forty Thousand Alumni</p>
+       </div>
+     </div>
+
+   </div>
+
+ </div>
+</section><!-- End Counts Section -->
+
+
+<!-- ======= MCSS Honor Society Section ======= -->
+
+<section id="testimonials" class="testimonials">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>MCSS Honor Society Coming SOON!</h2>
+    </div>
+
+    <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              G.W. Gibson High School 2022/2023 Valedictoria
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/team-isaac-6.jpg" class="testimonial-img" alt="">
+            <h3>Name</h3>
+            <h4>Valedictorian</h4>
+          </div>
+        </div><!-- End testimonial item -->
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+</section><!-- End val Section -->
+
+
+<!--========== End of Honor Society ===========-->
+
+
+
+
+
+<section id="faq" class="faq section-bg">
+ <div class="container" data-aos="fade-up">
+
+   <div class="section-title">
+     <h2>Superintedent Five Stregatic Goals</h2>
+     <p>The Superintendent has laid out his vision for success at the Monrovia Consolidated School System (MCSS). That vision is carved in five strategic initiatives or goals that would
+         lead to success for students, teachers, administrators, and staff. The initiative are:
+     </p>
+   </div>
+
+   <div class="faq-list">
+     {% for goals in supe_goals %}
+     <ul>
+       <li data-aos="fade-up">
+         <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">{{ goals.messages_title }}<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+         <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+           <p>
+             {{ goals.main_message }}
+           </p>
+         </div>
+       </li>
+       
+     </ul>
+     {%endfor%}
+   </div>
+
+ </div>
+</section><!-- End Frequently Asked Questions Section -->
+
+  
+
+{% endblock mcss-home-page %}
+    
+
+
+
+
