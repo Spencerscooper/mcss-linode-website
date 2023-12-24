@@ -1,0 +1,51 @@
+{% extends 'MCSSAPP/nav_footer.html' %}
+{%load static%}
+{%block title%}
+News
+{%endblock title%}
+
+
+{%block news%}
+<main id="main">
+    <!-- ======= MCSS Alumni get together ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="{%static 'assets/img/staffs/alumni1.jpg' %}" alt="">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            
+          </div>
+
+          <div class="col-lg-8">
+        
+            <div class="portfolio-info">
+              <p>{{news.date_release|timesince}} ago</p>
+              <h3>{{news.heading}}</h3>
+              <p>{{news.body|truncatewords:40}}</p>
+            </div>
+
+          </div>
+ 
+  </section><!-- End About Video Section -->
+
+          <!-- End here -->
+
+        </div>
+
+      </div>
+    </section><!-- End of MCSS Alumni get together -->
+
+  </main><!-- End #main -->
+
+
+{%endblock %}
